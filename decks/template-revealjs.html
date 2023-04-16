@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/solarized.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/monokai.min.css">
     
     <title>reveal.js - Template</title>
 	</head>
@@ -12,20 +13,45 @@
 		<div class="reveal">
 			<div class="slides">
 
+        <!-- Section 1 -->
 				<section>
 					<h2>Barebones Presentation</h2>
 					<p>This example contains the bare minimum includes and markup required to run a reveal.js presentation.</p>
 				</section>
 
+        
 				<section>
-					<h2>No Theme</h2>
-					<p>There's no theme included, so it will fall back on browser defaults.</p>
+          <!-- Section 2.1 - Code -->
+          <section>
+            <p>You can display code like this:</p>
+            <pre><code data-trim data-noescape>
+              (def lazy-fib
+                (concat
+                 [0 1]
+                 ((fn rfib [a b]
+                      (lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
+            </code></pre>              
+          </section>
+          
+          <!-- Section 2.1 - Markdown -->
+          <section data-markdown>
+            <p>Markdown can present some nice line numbering highlights:</p>
+            <textarea data-template>
+              ```js [1-2|3|4]
+              let a = 1;
+              let b = 2;
+              let c = x => 1 + 2 + x;
+              c(3);
+              ```
+            </textarea>
+          </section>
 				</section>
 
 			</div>
 		</div>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/highlight.min.js"></script>
 		<script>
 			Reveal.initialize({
         // Display the page number of the current slide
