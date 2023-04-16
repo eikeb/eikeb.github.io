@@ -27,7 +27,14 @@
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
 		<script>
-			Reveal.initialize();
+			Reveal.initialize({
+        // Display the page number of the current slide
+        slideNumber: true,
+
+        // Push each slide change to the browser history
+        // Also enables hash: true
+        history: true
+      });
 		</script>
 	</body>
 </html>
