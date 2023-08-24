@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/solarized.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/monokai.min.css">
+    
+    <title>Eclipse ADT - Tipps und Tricks</title>
+	</head>
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+
+        <!-- Section 1 -->
+				<section>
+					<h2>Eclipse - ABAP Development Tools</h2>
+          <img data-src="./images/eclipse-logo.png" height="200px">
+
+          <!-- Speaker notes -->
+          <aside class="notes">
+            Shhh, these are your private notes.
+          </aside>
+        
+				</section>
+
+				<section>
+          <!-- Section 2.1 - Installation -->
+          <section>
+            <h2>Installation</h2>
+            <ol>
+              <li>Download Eclipse: <a href="https://www.eclipse.org/downloads/">https://www.eclipse.org/downloads/</a></li>
+              <li>ADT Plugin installieren: 
+                <ul><li>Install New Software... -> <a href="https://tools.hana.ondemand.com/latest">https://tools.hana.ondemand.com/latest</a></li></ul>
+              </li>
+            </ol>             
+          </section>
+          
+          <!-- Section 2.2 - Projekt einrichten -->
+          <section>
+            <h2>Neues ABAP Projekt erstellen</h2>
+            <ul>
+              <li>ABAP Project: On-Premise System</li>
+              <li>ABAP Cloud Project: SAP BTP ABAP Environment</li>
+            </ul>
+            <img data-src="./images/create-project.png">
+            <p>Den Service Key zum ABAP Environment findet ihr in unserem <a href="https://ososoft.atlassian.net/wiki/spaces/DEVTRN/pages/3129540639/SAP+BTP+ososoft">Concluence</a>.</p>
+          </section>
+				</section>
+
+        <!-- Section 3 - Tipps und Tricks -->
+        <section>
+          <h2>Tipps und Tricks im Umgang mit Eclipse ADT</h2>
+        </section>
+
+        <!-- Section 4 - Perspectives und Windows -->
+        <section>
+          <!-- Section 4.1 - Perspectives -->
+          <section>
+            <h2>Perspectives</h2>
+            <img data-src="./images/perspectives.png">
+            <p>Das ADT Plugin bringt zwei wichtige Perspectives mit:</p>
+            <ul>
+              <li>ABAP</li>
+              <li>Debug</li>
+            </ul>
+          </section>
+
+          <!-- Section 4.2 - Windows -->
+          <section>
+            <h2>Windows</h2>
+            <p>Weitere Windows können über den Menüpunkt: "Windows -> Show View -> Other" hinzugefügt werden, bspw.:</p>
+            <ul>
+              <li>Problems</li>
+              <li>Outline</li>
+              <li>Relaation Explorer</li>
+              <li>Feed Reader (Short Dumps)</li>
+              <li>Transport Organizer</li>
+              <li>ABAP Language Help</li>
+              <li>ABAP Unit</li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- Section 5 - Project Explorer -->
+        <section>
+          <h2>Project Explorer einrichten</h2>
+          <ul>
+            <li>Favorite Packages</li>
+            <li>Favorite Objects</li>
+            <li>Released Objects</li>
+            <li>Inactive Objects</li>
+            <li>Eigene Pakete hinzufügen</li>
+          </ul>          
+          <br />
+          <img data-src="./images/project-explorer.png">
+        </section>
+
+        <!-- Section 6 - Shortcuts -->
+        <section>
+          <h2>Nützliche Shortcuts</h2>
+          <table>
+            <tbody>
+              <tr>
+                <td>F2</td>
+                <td>Show Tooltip Description</td>
+              </tr>              
+              <tr>
+                <td>F3 (oder STRG + Linksklick)</td>
+                <td>Navigate to</td>
+              </tr>
+              <tr>
+                <td>STRG + E</td>
+                <td>Quick Switch Editor</td>
+              </tr>
+              <tr>
+                <td>STRG + A</td>
+                <td>Open ABAP Development Object</td>
+              </tr>
+              <tr>
+                <td>STRG + Shift + G</td>
+                <td>ABAP Where-used List</td>
+              </tr>              
+              <tr>
+                <td>STRG + 1</td>
+                <td>Quick Fix</td>
+              </tr>              
+            </tbody>
+          </table>
+          <p>Hinweis: Viele der SAPGUI Shortcuts sind ebenfalls in Eclipse gültig!</p>
+
+          <!-- Speaker notes -->
+          <aside class="notes">
+            Filter in Open Development Object: type:dtel *employee*
+          </aside>
+        </section>
+
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/highlight.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/markdown/markdown.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/notes/notes.min.js"></script>
+		<script>
+			Reveal.initialize({
+        // Display the page number of the current slide
+        slideNumber: true,
+
+        // Push each slide change to the browser history
+        // Also enables hash: true
+        history: true,
+
+        // Enable some useful plugins
+        plugins: [ RevealHighlight, RevealMarkdown, RevealNotes ]
+      });
+		</script>
+	</body>
+</html>
