@@ -74,7 +74,7 @@
             <ul>
               <li>Problems</li>
               <li>Outline</li>
-              <li>Relaation Explorer</li>
+              <li>Relation Explorer</li>
               <li>Feed Reader (Short Dumps)</li>
               <li>Transport Organizer</li>
               <li>ABAP Language Help</li>
@@ -92,48 +92,129 @@
             <li>Released Objects</li>
             <li>Inactive Objects</li>
             <li>Eigene Pakete hinzufügen</li>
-          </ul>          
+          </ul>
           <br />
           <img data-src="./images/project-explorer.png">
         </section>
 
-        <!-- Section 6 - Shortcuts -->
+        <!-- Section 6 - Important Differences -->
         <section>
-          <h2>Nützliche Shortcuts</h2>
-          <table>
-            <tbody>
-              <tr>
-                <td>F2</td>
-                <td>Show Tooltip Description</td>
-              </tr>              
-              <tr>
-                <td>F3 (oder STRG + Linksklick)</td>
-                <td>Navigate to</td>
-              </tr>
-              <tr>
-                <td>STRG + E</td>
-                <td>Quick Switch Editor</td>
-              </tr>
-              <tr>
-                <td>STRG + A</td>
-                <td>Open ABAP Development Object</td>
-              </tr>
-              <tr>
-                <td>STRG + Shift + G</td>
-                <td>ABAP Where-used List</td>
-              </tr>              
-              <tr>
-                <td>STRG + 1</td>
-                <td>Quick Fix</td>
-              </tr>              
-            </tbody>
-          </table>
-          <p>Hinweis: Viele der SAPGUI Shortcuts sind ebenfalls in Eclipse gültig!</p>
+          <h2>Unterschiede zur SE80</h2>
+          <ul>
+            <li><b>Kein Änderungsmodus</b>: Objekt wird bei Änderungen automatisch gesperrt</li>
+            <li><b>Syntaxcheck</b> wird automatisch im Hintergrund ausgeführt</li>
+          </ul>
+        </section>
 
-          <!-- Speaker notes -->
-          <aside class="notes">
-            Filter in Open Development Object: type:dtel *employee*
-          </aside>
+        <!-- Section 6 - ABAP Templates -->
+        <section>
+          <section>
+            <h2>Einstellungen</h2>
+            <p>Window -> Preferences</p>
+            <ul>
+              <li>Debugging konfigurieren</li>
+              <li>Editor Settings (Coloring, Quick Assist, Templates)</li>
+              <li>...</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>ABAP Code Templates</h2>
+            <p>Window -> Preferences -> ABAP Development -> ... -> ABAP Templates</p>
+            <br />
+            <img data-src="./images/abap-code-templates.png">
+          </section>
+        </section>
+        
+        
+        <!-- Section 6 - Local History -->
+        <section>
+          <h2>Local History</h2>
+          <p>Neben den bekannten Versionen (Transport Release), gibt es eine Local History, die Zwischenstände von Objekten abspeichert.</p>
+        </section>        
+
+        <!-- Section 7 - Shortcuts -->
+        <section>
+          <!-- Section 7.1 - Allgemeine Shortcuts -->
+          <section>
+            <h2>Allgemeine Shortcuts</h2>
+            <table>
+              <tbody>
+                <tr>
+                  <td>STRG + E</td>
+                  <td>Quick Switch Editor</td>
+                </tr>
+                <tr>
+                  <td>STRG + A</td>
+                  <td>Open ABAP Development Object</td>
+                </tr>
+                <tr>
+                  <td>STRG + Shift + G</td>
+                  <td>ABAP Where-used List</td>
+                </tr>              
+                <tr>
+                  <td>STRG + O</td>
+                  <td>Show Quick Outline</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>Hinweis: Viele der SAPGUI Shortcuts sind ebenfalls in Eclipse gültig!</p>
+
+            <!-- Speaker notes -->
+            <aside class="notes">
+              Filter in Open Development Object: type:dtel *employee*
+            </aside>            
+          </section>
+
+          <!-- Section 7.2 - Editor Shortcuts -->
+          <section>
+            <h2>Editor Shortcuts</h2>
+            <table>
+              <tbody>
+                <tr>
+                  <td>F1</td>
+                  <td>Show ABAP Documentation</td>
+                </tr>                  
+                <tr>
+                  <td>F2</td>
+                  <td>Show Tooltip Description</td>
+                </tr>              
+                <tr>
+                  <td>F3 (oder STRG + Linksklick)</td>
+                  <td>Navigate to</td>
+                </tr>      
+                <tr>
+                  <td>STRG + 1</td>
+                  <td>Quick Fix</td>
+                </tr>
+                <tr>
+                  <td>ALT + F2</td>
+                  <td>Show Method Description</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <!-- Section 7.3 - Source Code Shortcuts -->
+          <section>
+            <h2>Source Code Shortcuts</h2>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Shift + F1</td>
+                  <td>Pretty Print</td>
+                </tr>                  
+                <tr>
+                  <td>STRG + F3</td>
+                  <td>Activate Object</td>
+                </tr>
+                <tr>
+                  <td>STRG + Space</td>
+                  <td>Content Assist</td>
+                </tr>                
+              </tbody>
+            </table>
+          </section>          
         </section>
 
 			</div>
